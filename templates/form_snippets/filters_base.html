@@ -1,0 +1,27 @@
+{% load i18n %}
+{% if filter %}
+<div class="accordion" id="accordionFilters">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            {% block filters_title %}{% trans "Filtros de Búsqueda" %}{% endblock %}
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionFilters">
+          <div class="accordion-body">
+              {% block accordion_body %}
+                <form action="" method="get" class="form">
+                    {% block filter_fields %}
+                    {% endblock %}
+
+                    {% block filter_submit_button %}
+                        <button type="submit" class="btn btn-outline-primary btn-custom-radius float-end mt-2"><i class="bi bi-search"></i> {% block filter_submit_label %}{% trans "Filtrar Resultados" %}{% endblock %}</button>
+                    {% endblock %}
+                    <div class="clearfix"></div>
+                </form>
+              {% endblock %}
+          </div>
+        </div>
+      </div>
+    </div>
+{% endif %}

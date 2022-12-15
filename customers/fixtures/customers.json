@@ -1,0 +1,28 @@
+[
+{
+    "model": "customers.customer",
+    "pk": 1,
+    "fields": {
+        "created_at": "2022-12-15T02:31:21.913Z",
+        "updated_at": "2022-12-15T02:31:21.913Z",
+        "document_number": "456789",
+        "first_name": "Pedro",
+        "last_name": "Carlos",
+        "email": "cliente1@gmail.com",
+        "phone_number": null
+    }
+},
+{
+    "model": "customers.customer",
+    "pk": 2,
+    "fields": {
+        "created_at": "2022-12-15T02:31:43.303Z",
+        "updated_at": "2022-12-15T02:31:43.303Z",
+        "document_number": "123456",
+        "first_name": "Alfredo",
+        "last_name": "Lobaina",
+        "email": "cliente2@gmail.com",
+        "phone_number": "+59896101203"
+    }
+}
+]

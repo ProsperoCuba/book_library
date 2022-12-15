@@ -1,0 +1,9 @@
+{% load i18n %}
+<div id="cookie_consent_container" class="alert d-none align-items-center alert-dark" role="alert">
+    <span>
+        {% trans "Utilizamos cookies para mejorar la experiencia del usuario a través de su navegación. Si continúas navegando aceptas su uso. Ver" %} <a href="#" target="_blank" class="ml-1 text-decoration-none">{% trans "Política de Cookies" %}</a>
+    </span>
+    <div class="ml-2 d-flex align-items-center justify-content-center">
+        <button id="accept_cookies_btn" class="allow-button btn btn-outline-dark">{% trans "Aceptar" %}</button>
+    </div>
+</div>

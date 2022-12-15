@@ -1,0 +1,14 @@
+{% extends "form_snippets/filters_base.html" %}
+{% load i18n %}
+
+{% block filter_fields %}
+<div class="row">
+    <div class="col-xl-4 col-xxl-4 col-lg-4 col-md-4 col-sm-12">
+        {% include "form_snippets/basic_dynamic_field_label_above.html" with field=filter.form.search %}
+    </div>
+</div>
+{% endblock %}
+
+{% block filter_submit_label %}
+    {% trans "Filtrar Clientes" %}
+{% endblock %}

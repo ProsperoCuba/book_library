@@ -1,0 +1,22 @@
+{% load i18n static %}
+<span class="table-actions d-flex flex-wrap" style="overflow: visible; position: relative; min-width: 110px;">
+    {% if record.status != 'returned' %}
+        <form method="post" class="d-inline-block" action="{{ record.approved_delivery }}">
+            {% csrf_token %}
+            <button type="submit" title="{% trans 'Aprobar Entrega' %}" data-bs-toggle="tooltip" data-bs-placement="top" class="btn btn-sm">
+                <i class="bi-check-circle text-success"></i>
+            </button>
+        </form>
+    {% endif %}
+
+    <a title="{% trans 'Editar' %}" href="{{ record.get_edit_url }}" data-bs-toggle="tooltip"
+       data-bs-placement="top" class="btn btn-sm">
+        <i class="bi-input-cursor"></i>
+    </a>
+    {% if record.status == 'returned' %}
+        <a title="{% trans 'Eliminar' %}" href="{{ record.get_delete_url}}" data-bs-toggle="tooltip"
+           data-bs-placement="top" class="btn btn-sm">
+            <i class="bi-trash text-danger"></i>
+        </a>
+    {% endif %}
+</span>

@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% load static i18n %}
+
+{% block title %}ERROR | {{error_number}}{% endblock %}
+{% block seo_meta_header %}
+{% include "core/meta_header.html" with error_page=True %}
+{% endblock %}
+
+{% block page_css %}
+<link href="{% static 'partners/black.css' %}" rel="stylesheet">
+{% endblock page_css %}
+
+
+{% block main_nav %}{% endblock main_nav %}
+
+{% block content %}
+
+<div class="offset-md-1 col-md-10 offset-xl-1 col-xl-10 offset-xxl-2 col-xxl-8 col-sm-12 mt-5">
+    <div class="row text-center">
+        <h1 class="pt-1 pb-3 fw-bold" style="font-size: 8rem !important;">
+            {{error_number}}
+        </h1>
+
+        <h4 class="fw-bolder fs-5">
+            {% if error_number == 404 %}
+            {% trans "Lo sentimos, no hemos encontrado la página que buscas." %}
+            {% elif error_number == 403 %}
+            {% trans "Lo sentimos, usted no tiene permisos apra acceder al área solicitada." %}
+            {% elif error_number == 500 %}
+            {% trans "Lo sentimos, ha ocurrido un error del servidor, estamos trabajando en la solución." %}
+            {% else %}
+            {% trans "Lo sentimos, ha ocurrido un error inesperado, estamos trabajando en la solución." %}
+            {% endif %}
+        </h4>
+        <p class="pt-1 pb-3">
+            <a style="color: white;" href="javascript:;" {% if request.GET.redirected %}
+                               onclick="window.location.href = document.referrer;" {% else %}
+                               onclick="window.history.go(-1); return false;"
+                               {% endif %}
+                               data-bs-toggle="tooltip" title="" data-bs-placement="top"
+                               data-bs-title="{% trans 'Volver' %}"
+                               class="btn btn-outline-primary btn-sm btn-icon btn-icon-md">
+                                {% trans "Volver" %}
+                            </a>
+        </p>
+
+    </div>
+</div>
+
+{% endblock content %}
+
+{% block footer %}
+    {% include "footer.html" %}
+{% endblock %}
+
+{% block seo_meta_footer %}
+{% include "core/meta_footer.html" %}
+{% endblock %}
+
+{% block page_js %}{% endblock %}
+{% block qr_modal %}{% endblock %}

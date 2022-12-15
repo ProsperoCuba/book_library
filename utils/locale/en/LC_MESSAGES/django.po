@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-26 01:08+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: utils/enums.py:51
+msgid "Pending"
+msgstr ""
+
+#: utils/enums.py:52
+msgid "Processing"
+msgstr ""
+
+#: utils/enums.py:53
+msgid "Approved"
+msgstr ""
+
+#: utils/enums.py:54
+msgid "Rejected"
+msgstr ""
+
+#: utils/models.py:13
+msgid "Created Date"
+msgstr ""
+
+#: utils/models.py:14
+msgid "Updated Date"
+msgstr ""
+
+#: utils/models.py:36
+msgid "Location"
+msgstr ""
+
+#: utils/models.py:46
+msgid "Previous Status"
+msgstr ""
+
+#: utils/models.py:47
+msgid "Current Status"
+msgstr ""
+
+#: utils/validators.py:7
+msgid "Phone must be in format: '+5399999999'. Allow up to 10 digits."
+msgstr ""
+
+#: utils/validators.py:9
+msgid "Hexadecimal incorrect format"
+msgstr ""
+
+#: utils/validators.py:25
+msgid "Incorrect DNI/PASSPORT."
+msgstr ""

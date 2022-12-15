@@ -1,0 +1,7 @@
+-r ../requirements/base.txt
+
+django-debug-toolbar
+django-extensions
+python-lsp-server
+pyls-isort
+python-lsp-black

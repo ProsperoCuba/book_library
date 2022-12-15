@@ -1,0 +1,6 @@
+{% load i18n %}
+{% if form.non_field_errors %}
+    {% for error in form.non_field_errors %}
+        {% include "form_snippets/custom_alert.html" with type="danger" icon="danger" text=error %}
+    {% endfor %}
+{% endif %}

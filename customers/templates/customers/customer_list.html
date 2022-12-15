@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load django_tables2 %}
+{% load i18n %}
+
+{% block page_css %}
+{% if filter %}
+    {{filter.form.css}}
+  {% endif %}
+{% endblock %}
+
+{% block content%}
+    <div class="d-flex justify-content-end mb-2">
+        <a class="btn btn-outline-primary btn-custom-radius float-end" href="{% url "customers:customers_create" %}">
+            {% trans "Crear Cliente" %}
+        </a>
+    </div>
+
+    {% if filter %}
+        {% include "customers/customer_filters.html" %}
+    {% endif %}
+    <br>
+    {% render_table table %}
+{% endblock content%}
+
+{% block page_js %}
+{% if filter %}
+    {{filter.form.js}}
+  {% endif %}
+{% endblock %}

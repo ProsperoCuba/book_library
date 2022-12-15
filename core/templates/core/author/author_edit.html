@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block content%}
+<form id="become-partner-form" class="form" enctype="multipart/form-data" method="post">
+<h2 class="offset-md-2"> {% trans "Editar Autor: "%} {{object.full_name}}</h2>
+    {% csrf_token %}
+    {% for field in form.hidden_fields %}
+        {{ field }}
+    {% endfor %}
+    <div class="offset-md-1 col-md-10 offset-xl-1 col-xl-10 offset-xxl-2 col-xxl-8 col-sm-12">
+        {% include "form_snippets/non_field_errors.html" %}
+        <div class="row g-2 p-2">
+
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                {% include "form_snippets/basic_dynamic_field_label_above.html" with field=form.full_name %}
+            </div>
+
+        </div>
+
+        <div class="col-12 text-start">
+            <button type="submit" class="btn btn-outline-primary btn-custom-radius">{% trans 'Guardar' %}</button>
+            <a href="{% url 'core:authors' %}" class="btn btn-outline-secondary btn-custom-radius">{% trans 'Cancelar' %}</a>
+        </div>
+
+        <br>
+    </div>
+</form>
+{% endblock content%}

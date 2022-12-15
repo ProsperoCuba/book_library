@@ -1,0 +1,106 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-26 01:08+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: users/enums.py:6
+msgid "DNI"
+msgstr ""
+
+#: users/enums.py:7
+msgid "NIE"
+msgstr ""
+
+#: users/enums.py:8
+msgid "Passport"
+msgstr ""
+
+#: users/enums.py:12
+msgid "Male"
+msgstr ""
+
+#: users/enums.py:13
+msgid "Female"
+msgstr ""
+
+#: users/enums.py:17
+msgid "Super Admin"
+msgstr ""
+
+#: users/enums.py:18
+msgid "Admin"
+msgstr ""
+
+#: users/enums.py:19
+msgid "Employee"
+msgstr ""
+
+#: users/models.py:27
+msgid "Username"
+msgstr ""
+
+#: users/models.py:29
+msgid "150 characters or less. Letters, digits y @/./+/-/_ only."
+msgstr ""
+
+#: users/models.py:34
+msgid "Email"
+msgstr ""
+
+#: users/models.py:35
+msgid "Phone Number"
+msgstr ""
+
+#: users/models.py:36
+msgid "Avatar"
+msgstr ""
+
+#: users/models.py:39
+msgid "Birthday"
+msgstr ""
+
+#: users/models.py:40
+msgid "Gender"
+msgstr ""
+
+#: users/models.py:41
+msgid "Language"
+msgstr ""
+
+#: users/models.py:42
+msgid "Profile"
+msgstr ""
+
+#: users/models.py:43
+msgid "Last Password Change"
+msgstr ""
+
+#: users/models.py:48 users/models.py:51
+msgid "User"
+msgstr ""
+
+#: users/models.py:52
+msgid "Users"
+msgstr ""
+
+#: users/tasks.py:35 users/tasks.py:36
+msgid "Recovery your password fallowing next link"
+msgstr ""
+
+#: users/tasks.py:36
+msgid "Password recovery"
+msgstr ""

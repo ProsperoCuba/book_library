@@ -1,0 +1,24 @@
+body{
+	background-color: rgb(33, 34, 39);
+	color: #f6fcff;
+}
+
+.text-justify {
+  margin: 0;
+  /*text-indent: 2rem;*/
+  text-align: justify !important;
+}
+
+/*override select2 input styles*/
+.select2.select2-container{
+    width: 100% !important;
+}
+
+.select2 .selection .select2-selection {
+    height: 36px;
+}
+.select2-container .select2-dropdown{
+    color: black !important;
+    font-size: 13px !important;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif !important;
+}

@@ -1,0 +1,19 @@
+{% load i18n static %}
+<span class="table-actions d-flex flex-wrap" style="overflow: visible; position: relative; min-width: 110px;">
+    <a title="{% trans 'Editar' %}" href="{% url "users:edit" record.pk %}" data-bs-toggle="tooltip"
+       data-bs-placement="top" class="btn btn-sm">
+        <i class="bi-input-cursor"></i>
+    </a>
+
+    <!-- Generate subscription -->
+    <a title="{% trans 'Cambiar Contraseña' %}" href="{% url "users:password" record.pk %}" data-bs-toggle="tooltip"
+       data-bs-placement="top" class="btn btn-sm">
+        <i class="bi-key"></i>
+    </a>
+
+    <!-- Generate subscription -->
+    <a title="{% trans 'Eliminar' %}" href="{% url "users:delete" record.pk %}" data-bs-toggle="tooltip"
+       data-bs-placement="top" class="btn btn-sm">
+        <i class="bi-trash text-danger"></i>
+    </a>
+</span>

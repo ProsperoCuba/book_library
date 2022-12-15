@@ -1,0 +1,47 @@
+{% extends "form_snippets/filters_base.html" %}
+{% load i18n %}
+
+{% block filter_fields %}
+<div class="row">
+    <div class="col-xl-4 col-xxl-4 col-lg-4 col-md-4 col-sm-12">
+        {% include "form_snippets/basic_dynamic_field_label_above.html" with field=filter.form.search %}
+    </div>
+    <div class="col-xl-2 col-xxl-2 col-lg-2 col-md-2 col-sm-12">
+        {% include "form_snippets/basic_dynamic_field_label_above.html" with field=filter.form.is_superuser %}
+    </div>
+    <div class="col-xl-2 col-xxl-2 col-lg-2 col-md-2 col-sm-12">
+        {% include "form_snippets/basic_dynamic_field_label_above.html" with field=filter.form.is_active %}
+    </div>
+    <div class="col-xl-4 col-xxl-4 col-lg-4 col-md-4 col-sm-12">
+        {% include "form_snippets/basic_dynamic_field_label_above.html" with field=filter.form.date_joined %}
+    </div>
+</div>
+
+{% comment %}
+<div class="row">
+    <div class="col-xl-4 col-xxl-4 col-lg-4 col-md-4 col-sm-12">
+        {% include "form_snippets/basic_dynamic_field_label_above.html" with field=filter.form.username %}
+    </div>
+    <div class="col-xl-4 col-xxl-4 col-lg-4 col-md-4 col-sm-12">
+        {% include "form_snippets/basic_dynamic_field_label_above.html" with field=filter.form.email %}
+    </div>
+    <div class="col-xl-4 col-xxl-4 col-lg-4 col-md-4 col-sm-12">
+        {% include "form_snippets/basic_dynamic_field_label_above.html" with field=filter.form.phone_number %}
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xl-4 col-xxl-4 col-lg-4 col-md-4 col-sm-12">
+        {% include "form_snippets/basic_dynamic_field_label_above.html" with field=filter.form.is_superuser %}
+    </div>
+    <div class="col-xl-4 col-xxl-4 col-lg-4 col-md-4 col-sm-12">
+        {% include "form_snippets/basic_dynamic_field_label_above.html" with field=filter.form.is_active %}
+    </div>
+    <div class="col-xl-4 col-xxl-4 col-lg-4 col-md-4 col-sm-12">
+        {% include "form_snippets/basic_dynamic_field_label_above.html" with field=filter.form.date_joined %}
+    </div>
+</div>
+{% endcomment %}
+{% endblock %}
+
+{% block filter_submit_label %}{% trans "Filtrar Usuarios" %}{% endblock %}

@@ -1,0 +1,31 @@
+{% load i18n widget_tweaks %}
+{% if field %}
+    <div class="form-group m-1 {% if custom_display %}{% else %}row{% endif %}{% if field.errors %} is-invalid{% endif %}">
+
+        <div class="col-12 {% if label_floating %}form-floating{% endif %}">
+            <label class="form-control-label">{{ field.label_tag }} {% if force_required or field.field.required %} <span class="text-danger fw-bold">*</span>{% endif %}</label>
+            {% if field.errors %}
+                {% render_field field class+="form-control form-select is-invalid" %}
+
+            {% else %}
+
+                {% render_field field class+="form-control form-select" %}
+
+            {% endif %}
+
+            {% if field.errors %}
+                <div class="invalid-feedback">
+                    {{ field.errors }}
+                </div>
+            {% endif %}
+
+            {% if field.help_text %}
+                <span class="form-text text-muted">
+                    {{ field.help_text }}
+                </span>
+            {% endif %}
+
+        </div>
+
+    </div>
+{% endif %}

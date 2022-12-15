@@ -1,0 +1,14 @@
+{% load i18n static  widget_tweaks %}
+{% if field %}
+    {% if  field.field.widget.input_type == "checkbox" %}
+        {% include 'form_snippets/basic_switch_input_label_above.html' %}
+    {% elif field.field.widget.input_type == "select" %}
+        {% include 'form_snippets/basic_select2_input_label_above.html' %}
+    {% elif field.field.widget.input_type == "file" %}
+        {% include 'form_snippets/basic_input_label_above.html' %}
+    {% elif field.field.widget.input_type == "datetime" %}
+        {% include 'form_snippets/basic_input_label_above.html' %}
+    {% else %}
+        {% include 'form_snippets/basic_input_label_above.html' %}
+    {% endif %}
+{% endif %}

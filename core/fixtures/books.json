@@ -1,0 +1,78 @@
+[
+{
+    "model": "core.book",
+    "pk": 2,
+    "fields": {
+        "created_at": "2022-12-14T13:50:25.644Z",
+        "updated_at": "2022-12-14T13:50:25.644Z",
+        "title": "La Galana",
+        "summary": "En esta primera parte de la novela de Cervantes conocemos a Elicio, un pastor que vive cerca del Tajo y que está enamorado de Galatea, una pastora y coprotagonista de la obra.",
+        "quantity": 10,
+        "in_stock": 10,
+        "author": [
+            1
+        ]
+    }
+},
+{
+    "model": "core.book",
+    "pk": 3,
+    "fields": {
+        "created_at": "2022-12-14T13:56:03.014Z",
+        "updated_at": "2022-12-14T18:04:42.491Z",
+        "title": "La gitanilla",
+        "summary": "Es, sin duda, la gran obra teatral de Miguel de Cervantes, un género en el que el autor hizo bastantes menos incursiones que en la novela. Conocida también como ´Numancia´, se calcula que fue escrita hacia 1585 y está basada en las guerras celtíberas",
+        "quantity": 5,
+        "in_stock": 5,
+        "author": [
+            1
+        ]
+    }
+},
+{
+    "model": "core.book",
+    "pk": 4,
+    "fields": {
+        "created_at": "2022-12-14T13:57:18.146Z",
+        "updated_at": "2022-12-14T18:04:36.983Z",
+        "title": "La vuelta al mundo en 80 días",
+        "summary": "El señor Phileas Fogg, un misterioso y solitario caballero inglés, abandonará su vida disciplinada para cumplir una apuesta con los miembros del Reform Club, en la que arriesgará una parte de su fortuna comprometiéndose a dar la vuelta al mundo",
+        "quantity": 10,
+        "in_stock": 10,
+        "author": [
+            3
+        ]
+    }
+},
+{
+    "model": "core.book",
+    "pk": 5,
+    "fields": {
+        "created_at": "2022-12-14T13:58:27.306Z",
+        "updated_at": "2022-12-14T13:58:27.306Z",
+        "title": "La Isla Misteriosa",
+        "summary": "Durante la guerra de secesión de América, unos prisioneros de los sudistas consiguen evadirse y apoderarse de un globo, con el cual huyen.",
+        "quantity": 5,
+        "in_stock": 5,
+        "author": [
+            3
+        ]
+    }
+},
+{
+    "model": "core.book",
+    "pk": 6,
+    "fields": {
+        "created_at": "2022-12-14T13:59:28.950Z",
+        "updated_at": "2022-12-14T20:16:49.586Z",
+        "title": "La mezcla",
+        "summary": null,
+        "quantity": 10,
+        "in_stock": 1,
+        "author": [
+            4,
+            2
+        ]
+    }
+}
+]

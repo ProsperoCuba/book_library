@@ -1,0 +1,56 @@
+h1 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+p, li {
+    font-size: 15px;
+    margin-bottom: 0.5em;
+}
+
+.section_protection p {
+    font-size: 13px;
+}
+
+.inscription-container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    line-height: 1.1;
+    text-align: justify;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.inscription-container p,
+.inscription-container p strong,
+.inscription-container p span,
+.inscription-container ul,
+.inscription-container ul li {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 10pt !important;
+}
+
+.inscription-container ul {
+    padding-left: 0;
+}
+
+.section_signed {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inscription-container h1, .inscription-container h1 strong {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20pt !important;
+}
+
+.inscription-container .partner_data ul p{
+    margin-top: 1% !important;
+    margin-bottom: 1% !important;
+}
+
+.form-check-input:disabled, .form-check-input:disabled ~ .form-check-label,
+.form-check-input[disabled] ~ .form-check-label {
+    opacity: 1;
+}

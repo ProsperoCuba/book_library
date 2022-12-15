@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block content%}
+<form id="delete-form" class="form text-center align-content-center" method="post">
+    <h2 class="d-inline">
+        {% trans "Eliminar elemento" %}: {{object}}? <button type="submit" class="btn btn-outline-danger btn-custom-radius">
+        {% trans 'Eliminar' %}
+    </button>
+    </h2>
+    {% csrf_token %}
+    {% for field in form.hidden_fields %}
+        {{ field }}
+    {% endfor %}
+</form>
+{% endblock content%}
+
